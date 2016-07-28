@@ -33,7 +33,7 @@ frame[0][1] = 'Y'
 # draw func
 f =[]
 f = ['y=']
-f << func
+f << $func
 frame[0][10] << f
 # draw graph
 for x in 0..79 do
