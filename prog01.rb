@@ -38,8 +38,10 @@ frame[0][22] = $func
 # draw graph
 for x in 0..79 do
  a = x/80.0
- y = 24.0 - f(a)*25.0
- frame[y.to_i][x] = '*'
+ y = 24 - f(a)*25
+if y>-1 then
+ frame[y][x] = '*'
+end
 end
 
 # printout
